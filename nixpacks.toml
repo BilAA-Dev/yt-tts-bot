@@ -1,9 +1,6 @@
 [providers]
 python = "3.10"
 
-[phases.setup]
-nixPkgs = ["python310", "python310Packages.pip"]
-
 [phases.install]
 cmds = ["pip install -r backend/requirements.txt"]
 
