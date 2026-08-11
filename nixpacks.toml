@@ -1,8 +1,0 @@
-[providers]
-python = "3.10"
-
-[phases.install]
-cmds = ["pip install -r backend/requirements.txt"]
-
-[phases.start]
-cmd = "python backend/app.py"
