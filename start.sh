@@ -1,3 +1,3 @@
 #!/bin/bash
-pip install -r backend/requirements.txt
-python backend/app.py
+pip3 install -r backend/requirements.txt
+python3 backend/app.py
