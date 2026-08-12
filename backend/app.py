@@ -3,18 +3,12 @@ from flask_cors import CORS
 from gtts import gTTS
 import os
 import time
-import threading
-import queue
 import json
-import websocket
+import requests
 from yt_utils import *
-import pygame
 
 app = Flask(__name__, static_folder='../frontend', static_url_path='')
 CORS(app)
-
-chat_queue = queue.Queue()
-is_connected = False
 
 @app.route('/')
 def index():
